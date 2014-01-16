@@ -30,7 +30,7 @@ class CrazyMonkey{
 		flush();
 		$this->ex = explode(' ', $data);
 		if($this->ex[0] == 'PING'){
-			$this->send_data('PONG', $this->ex[1];
+			$this->send_data('PONG', $this->ex[1]);
 		}
 		$command = str_replace(array(chr(10), chr(13)), '', $this->ex[3]);
 		switch($command){
@@ -52,3 +52,4 @@ class CrazyMonkey{
 		}
 		$this->main;
 	}
+}
