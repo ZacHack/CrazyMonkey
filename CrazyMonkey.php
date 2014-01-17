@@ -46,7 +46,7 @@ class CrazyMonkey{
 			case ':!deop':
 				$this->op_user('','',false);
 				break;
-			case ':!speak'
+			case ':!speak':
 				fputs($socket, "PRIVMSG It works!\n");
 				break;
 		}
