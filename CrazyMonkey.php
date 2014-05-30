@@ -21,7 +21,7 @@ $config = array(
 $settings = array(
 	"AROK" => "on",
 	//AROK Stands for Auto Rejoin On Kick
-	
+	);
 //STOP EDITING HERE
 $server = $config['Server'];
 $realname = $config['RealName'];
