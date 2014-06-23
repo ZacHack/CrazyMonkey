@@ -7,7 +7,7 @@ DO NOT claim this product is yours
 */
 
 //EDIT THIS PART
-echo"Running CrazyMonkey version 1.0.0";
+echo "Running CrazyMonkey version 1.0.0";
 $config = array(
 	"Server" => "irc.freenode.net",
 	"RealName" => "Fred",
