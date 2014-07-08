@@ -20,6 +20,7 @@ $config = array(
 	$admins = array("<InsertAdminHere>", "InsertAdminHere");
 $settings = array(
 	"AROK" => "on",
+	"QuitMessage" => "Bye!",
 	//AROK Stands for Auto Rejoin On Kick
 	);
 //STOP EDITING HERE
@@ -30,6 +31,7 @@ $nick = $config['Nick'];
 $pass = $conifg['Pass'];
 $channel = $config['Channel'];
 $apikey = $config['WolframAPI'];
+$quitmessage = $settings['QuitMessage'];
 set_time_limit(0);
 ini_set('display_errors', 'on');
 sleep(5);
