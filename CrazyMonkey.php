@@ -17,7 +17,7 @@ $config = array(
 	"Channel" => "#channel",
 	"WolframAPI" => "<API key>",
 	);
-	$admins = ("<InsertAdminHere>", "InsertAdminHere");
+	$admins = array("<InsertAdminHere>", "InsertAdminHere");
 $settings = array(
 	"AROK" => "on",
 	//AROK Stands for Auto Rejoin On Kick
@@ -57,13 +57,14 @@ while(1){
 		$cmd = str_replace(array(chr(10), chr(13)), '', $ex[3]);
 		if($cmd == ":!op"){
 			if($ex[0] == ":".$admins[0]."" or $ex[0] == ":".$admins[1].""){
-				fputs($socket, "MODE ".$ex[2]." +o ".$ex[4]."\r\n"):
+				fputs($socket, "MODE ".$ex[2]." +o ".$ex[4]."\r\n");
 				fputs($socket, "PRIVMSG ".$ex[2]." :Opped ".$ex[4]."\r\n");
 				break;
 			}else{
 				fputs($socket, "PRIVMSG ".$ex[2]." :You cannot use this command\r\n");
 				break;
 			}
+		}
 		if($cmd == ":!deop"){
 			if($ex[0] == ":".$admins[0]."" or ":".$admins[1].""){
 				fputs($socket, "MODE ".$ex[2]." +o ".$ex[4]."\r\n");
