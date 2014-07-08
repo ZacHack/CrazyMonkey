@@ -223,7 +223,7 @@ while(1){
 		if($cmd == ":!lmgtfy"){
 			$args = NULL; for ($i = 4; $i < count($ex); $i++) { $args .= $ex[$i] . ' '; }
 			$text = str_replace(" ", "+", $args);
-			fputs($socket, "PTIVMSG ".$ex[2]." :Link http://lmgtfy.com/?q=".$text."\r\n");
+			fputs($socket, "PRIVMSG ".$ex[2]." :Link http://lmgtfy.com/?q=".$text."\r\n");
 			break;
 		}
 	}
