@@ -7,10 +7,10 @@ Features
 ========
 CrazyMonkey has an editable config and settings, More in the future!
 CrazyMonkey can:
-*Check if servers are online
-*Automatically rejoin if kicked
-*Check Wolfram ALpha and recieve answers
-*Get links from http://lmgtfy.com/
+* Check if servers are online
+* Automatically rejoin if kicked
+* Check Wolfram Alpha and recieve answers
+* Get links from http://lmgtfy.com/
 
 Commands
 ========
